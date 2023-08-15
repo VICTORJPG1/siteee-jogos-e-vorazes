@@ -1,106 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;900&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="js/carrocel.js" defer></script>
-    <title>THE HUNGER GAMES</title>
+    <title>JOGOS VORAZES</title>
     <link rel="stylesheet" href="css/english.css" />
     <script defer src="js/app.js"></script>
-  </head>
-  <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+
     <header class="header">
-      <a href="/" class="logo">THE HUNGER GAMES</a>
-      <nav class="nav">
-        <button class="btn-menu" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-          Menu<span class="hamburger"></span>
-        </button>
-        <!-- <input type="checkbox" id="checkbox" class="checkbox" />
-          <label for="checkbox" class="label-menu"
-            >Menu<span class="hamburger"></span
-          ></label> -->
-        <ul class="menu" id="menu" role="menu">
-          <li><a href="#page">HOME</a></li>
-          <li><a href="#games">THE HUNGER GAMES</a></li>
-          <li><a href="#fire">CATCHING FIRE</a></li>
-          <li><a href="#mockingjay">MOCKINGJAY</a></li>
-          <li><a class="br" href="index.html"><img src="brasil.webp"></a></li>
-          <li><a class="uk" href="english.html"><img src="uk.png"></a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-        <div id="page">
-          <div class="text">
-            <h1>
-              THE HUNGER GAMES
-            </h1>
-            <p>
-              THE PHOENIX SPREADS IT'S WINGS
-            </p>
-            <button>
-              <a href="#games" target="_blank">
-                START NOW
-              </a>
+        <a href="/" class="logo">THE HUNGER GAMES</a>
+        <nav class="nav">
+            <button class="btn-menu" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+                <span class="hamburger"></span>
             </button>
-          </div>
-          <div class="img">
-            <a><img src="vo.png"></a>
-          </div>
-        </div>
-    
-        <div id="games">
-          <div class="container">
-            <div class="container-slider">
-              <button id="prev-button"><img src="arrow (1).png" alt="prev-button"></button>
-              <div class="container-images">
-                <img src="Tordo.png" alt="simble" class="slider on">
-                <img src="casal.webp" alt="casal" class="slider">
-              </div>
-              <button id="next-button"><img src="arrow (1).png" alt="next-button"></button>
+            <!-- <input type="checkbox" id="checkbox" class="checkbox" />
+            <label for="checkbox" class="label-menu"
+              >Menu<span class="hamburger"></span
+            ></label> -->
+            <ul class="menu" id="menu" role="menu">
+                <li><a href="#page">HOME</a></li>
+                <li><a href="#games">THE HUNGER GAMES</a></li>
+                <li><a href="#fire">CATCHING FIRE</a></li>
+                <li><a href="#mockingjay">MOCKINGJAY</a></li>
+                <li><a class="br" href="index.html"><img src="brasil.webp"></a></li>
+                <li><a class="uk" href="english.html"><img src="uk.png"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="page">
+            <div class="con">
+                <img src="jv.webp" alt="" />
+                <img src="b.webp" alt="" />
+                <img src="e.webp" alt="" />
             </div>
-          </div>
-          <div class="card">
-            <div class="content">
-            <h1>THE HUNGER GAMES</h1>
-            <p>
-    
-              "The Hunger Games" is the first book in a dystopian trilogy written by Suzanne Collins. The story takes place
-              in Panem, a nation divided into districts controlled by the Capitol. The protagonist, Katniss
-              Everdeen, lives in the impoverished District 12 and volunteers to participate in the Hunger Games in place of
-              her sister. The Hunger Games are a deadly annual event where 24 young individuals fight to the death in a
-              televised arena. Katniss becomes a figure of resistance against the oppressive government, facing challenges
-              and dangers as she fights for survival. The book addresses themes such as social inequality, media
-              manipulation, and the power of resistance. It is an engaging story, full of action and reflections on the
-              human condition.
-            </p>
+            <div class="text">
+                <h1>
+                    THE HUNGER GAMES
+                </h1>
+                <p>
+                    ALL ABOUT THE HUNGER GAMES TRIOLOGY
+                </p>
+                <button>
+                  <button onclick="window.location.href = '#games'">
+                    <a>
+                        START NOW
+                    </a>
+                </button>
+            </div>
+            <div class="img">
+                <a><img src="vo.webp"></a>
+            </div>
         </div>
-        <button id="read_button">
-            read more
-        </button>
-        <button class="B">
-          <a href="#games" target="_blank">
-            CLICK TO CONTINUE
-          </a>
-        </button>
-      </div>
-    </div>
 
-    <div id="fire">
 
-    </div>
-    <div id="mockingjay">
+        <div id="games">
+            <!-- img icon retirado desse link "https://codepen.io/laura-caicedo/pen/XWZavEd"-->
+            <div class="elementor-shape elementor-shape-top" data-negative="false">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 27.8" preserveAspectRatio="none">
+                    <path class="elementor-shape-fill"
+                        d="M283.5,9.7c0,0-7.3,4.3-14,4.6c-6.8,0.3-12.6,0-20.9-1.5c-11.3-2-33.1-10.1-44.7-5.7	s-12.1,4.6-18,7.4c-6.6,3.2-20,9.6-36.6,9.3C131.6,23.5,99.5,7.2,86.3,8c-1.4,0.1-6.6,0.8-10.5,2c-3.8,1.2-9.4,3.8-17,4.7	c-3.2,0.4-8.3,1.1-14.2,0.9c-1.5-0.1-6.3-0.4-12-1.6c-5.7-1.2-11-3.1-15.8-3.7C6.5,9.2,0,10.8,0,10.8V0h283.5V9.7z M260.8,11.3	c-0.7-1-2-0.4-4.3-0.4c-2.3,0-6.1-1.2-5.8-1.1c0.3,0.1,3.1,1.5,6,1.9C259.7,12.2,261.4,12.3,260.8,11.3z M242.4,8.6	c0,0-2.4-0.2-5.6-0.9c-3.2-0.8-10.3-2.8-15.1-3.5c-8.2-1.1-15.8,0-15.1,0.1c0.8,0.1,9.6-0.6,17.6,1.1c3.3,0.7,9.3,2.2,12.4,2.7	C239.9,8.7,242.4,8.6,242.4,8.6z M185.2,8.5c1.7-0.7-13.3,4.7-18.5,6.1c-2.1,0.6-6.2,1.6-10,2c-3.9,0.4-8.9,0.4-8.8,0.5	c0,0.2,5.8,0.8,11.2,0c5.4-0.8,5.2-1.1,7.6-1.6C170.5,14.7,183.5,9.2,185.2,8.5z M199.1,6.9c0.2,0-0.8-0.4-4.8,1.1	c-4,1.5-6.7,3.5-6.9,3.7c-0.2,0.1,3.5-1.8,6.6-3C197,7.5,199,6.9,199.1,6.9z M283,6c-0.1,0.1-1.9,1.1-4.8,2.5s-6.9,2.8-6.7,2.7	c0.2,0,3.5-0.6,7.4-2.5C282.8,6.8,283.1,5.9,283,6z M31.3,11.6c0.1-0.2-1.9-0.2-4.5-1.2s-5.4-1.6-7.8-2C15,7.6,7.3,8.5,7.7,8.6	C8,8.7,15.9,8.3,20.2,9.3c2.2,0.5,2.4,0.5,5.7,1.6S31.2,11.9,31.3,11.6z M73,9.2c0.4-0.1,3.5-1.6,8.4-2.6c4.9-1.1,8.9-0.5,8.9-0.8	c0-0.3-1-0.9-6.2-0.3S72.6,9.3,73,9.2z M71.6,6.7C71.8,6.8,75,5.4,77.3,5c2.3-0.3,1.9-0.5,1.9-0.6c0-0.1-1.1-0.2-2.7,0.2	C74.8,5.1,71.4,6.6,71.6,6.7z M93.6,4.4c0.1,0.2,3.5,0.8,5.6,1.8c2.1,1,1.8,0.6,1.9,0.5c0.1-0.1-0.8-0.8-2.4-1.3	C97.1,4.8,93.5,4.2,93.6,4.4z M65.4,11.1c-0.1,0.3,0.3,0.5,1.9-0.2s2.6-1.3,2.2-1.2s-0.9,0.4-2.5,0.8C65.3,10.9,65.5,10.8,65.4,11.1	z M34.5,12.4c-0.2,0,2.1,0.8,3.3,0.9c1.2,0.1,2,0.1,2-0.2c0-0.3-0.1-0.5-1.6-0.4C36.6,12.8,34.7,12.4,34.5,12.4z M152.2,21.1	c-0.1,0.1-2.4-0.3-7.5-0.3c-5,0-13.6-2.4-17.2-3.5c-3.6-1.1,10,3.9,16.5,4.1C150.5,21.6,152.3,21,152.2,21.1z">
+                    </path>
+                    <path class="elementor-shape-fill"
+                        d="M269.6,18c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3	C267.7,18.8,269.7,18,269.6,18z">
+                    </path>
+                    <path class="elementor-shape-fill"
+                        d="M227.4,9.8c-0.2-0.1-4.5-1-9.5-1.2c-5-0.2-12.7,0.6-12.3,0.5c0.3-0.1,5.9-1.8,13.3-1.2	S227.6,9.9,227.4,9.8z">
+                    </path>
+                    <path class="elementor-shape-fill"
+                        d="M204.5,13.4c-0.1-0.1,2-1,3.2-1.1c1.2-0.1,2,0,2,0.3c0,0.3-0.1,0.5-1.6,0.4	C206.4,12.9,204.6,13.5,204.5,13.4z">
+                    </path>
+                    <path class="elementor-shape-fill"
+                        d="M201,10.6c0-0.1-4.4,1.2-6.3,2.2c-1.9,0.9-6.2,3.1-6.1,3.1c0.1,0.1,4.2-1.6,6.3-2.6	S201,10.7,201,10.6z">
+                    </path>
+                    <path class="elementor-shape-fill"
+                        d="M154.5,26.7c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3	C152.6,27.5,154.6,26.8,154.5,26.7z">
+                    </path>
+                    <path class="elementor-shape-fill"
+                        d="M41.9,19.3c0,0,1.2-0.3,2.9-0.1c1.7,0.2,5.8,0.9,8.2,0.7c4.2-0.4,7.4-2.7,7-2.6	c-0.4,0-4.3,2.2-8.6,1.9c-1.8-0.1-5.1-0.5-6.7-0.4S41.9,19.3,41.9,19.3z">
+                    </path>
+                    <path class="elementor-shape-fill"
+                        d="M75.5,12.6c0.2,0.1,2-0.8,4.3-1.1c2.3-0.2,2.1-0.3,2.1-0.5c0-0.1-1.8-0.4-3.4,0	C76.9,11.5,75.3,12.5,75.5,12.6z">
+                    </path>
+                    <path class="elementor-shape-fill"
+                        d="M15.6,13.2c0-0.1,4.3,0,6.7,0.5c2.4,0.5,5,1.9,5,2c0,0.1-2.7-0.8-5.1-1.4	C19.9,13.7,15.7,13.3,15.6,13.2z">
+                    </path>
+                </svg>
+            </div>
 
-    </div>
-  </main>
-  <footer></footer>
-  <script src="js/scroll.js"></script>
-  <script src="js/card.en.js"></script>
+            <div class="elementor-shape elementor-shape-bottom" data-negative="false">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 27.8" preserveAspectRatio="none">
+                    <path class="elementor-shape-fill"
+                        d="M283.5,9.7c0,0-7.3,4.3-14,4.6c-6.8,0.3-12.6,0-20.9-1.5c-11.3-2-33.1-10.1-44.7-5.7	s-12.1,4.6-18,7.4c-6.6,3.2-20,9.6-36.6,9.3C131.6,23.5,99.5,7.2,86.3,8c-1.4,0.1-6.6,0.8-10.5,2c-3.8,1.2-9.4,3.8-17,4.7	c-3.2,0.4-8.3,1.1-14.2,0.9c-1.5-0.1-6.3-0.4-12-1.6c-5.7-1.2-11-3.1-15.8-3.7C6.5,9.2,0,10.8,0,10.8V0h283.5V9.7z M260.8,11.3	c-0.7-1-2-0.4-4.3-0.4c-2.3,0-6.1-1.2-5.8-1.1c0.3,0.1,3.1,1.5,6,1.9C259.7,12.2,261.4,12.3,260.8,11.3z M242.4,8.6	c0,0-2.4-0.2-5.6-0.9c-3.2-0.8-10.3-2.8-15.1-3.5c-8.2-1.1-15.8,0-15.1,0.1c0.8,0.1,9.6-0.6,17.6,1.1c3.3,0.7,9.3,2.2,12.4,2.7	C239.9,8.7,242.4,8.6,242.4,8.6z M185.2,8.5c1.7-0.7-13.3,4.7-18.5,6.1c-2.1,0.6-6.2,1.6-10,2c-3.9,0.4-8.9,0.4-8.8,0.5	c0,0.2,5.8,0.8,11.2,0c5.4-0.8,5.2-1.1,7.6-1.6C170.5,14.7,183.5,9.2,185.2,8.5z M199.1,6.9c0.2,0-0.8-0.4-4.8,1.1	c-4,1.5-6.7,3.5-6.9,3.7c-0.2,0.1,3.5-1.8,6.6-3C197,7.5,199,6.9,199.1,6.9z M283,6c-0.1,0.1-1.9,1.1-4.8,2.5s-6.9,2.8-6.7,2.7	c0.2,0,3.5-0.6,7.4-2.5C282.8,6.8,283.1,5.9,283,6z M31.3,11.6c0.1-0.2-1.9-0.2-4.5-1.2s-5.4-1.6-7.8-2C15,7.6,7.3,8.5,7.7,8.6	C8,8.7,15.9,8.3,20.2,9.3c2.2,0.5,2.4,0.5,5.7,1.6S31.2,11.9,31.3,11.6z M73,9.2c0.4-0.1,3.5-1.6,8.4-2.6c4.9-1.1,8.9-0.5,8.9-0.8	c0-0.3-1-0.9-6.2-0.3S72.6,9.3,73,9.2z M71.6,6.7C71.8,6.8,75,5.4,77.3,5c2.3-0.3,1.9-0.5,1.9-0.6c0-0.1-1.1-0.2-2.7,0.2	C74.8,5.1,71.4,6.6,71.6,6.7z M93.6,4.4c0.1,0.2,3.5,0.8,5.6,1.8c2.1,1,1.8,0.6,1.9,0.5c0.1-0.1-0.8-0.8-2.4-1.3	C97.1,4.8,93.5,4.2,93.6,4.4z M65.4,11.1c-0.1,0.3,0.3,0.5,1.9-0.2s2.6-1.3,2.2-1.2s-0.9,0.4-2.5,0.8C65.3,10.9,65.5,10.8,65.4,11.1	z M34.5,12.4c-0.2,0,2.1,0.8,3.3,0.9c1.2,0.1,2,0.1,2-0.2c0-0.3-0.1-0.5-1.6-0.4C36.6,12.8,34.7,12.4,34.5,12.4z M152.2,21.1	c-0.1,0.1-2.4-0.3-7.5-0.3c-5,0-13.6-2.4-17.2-3.5c-3.6-1.1,10,3.9,16.5,4.1C150.5,21.6,152.3,21,152.2,21.1z">
+                    </path>
+                    <path class="elementor-shape-fill"
+                        d="M269.6,18c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3	C267.7,18.8,269.7,18,269.6,18z">
+                    </path>
+                    <path class="elementor-shape-fill"
+                        d="M227.4,9.8c-0.2-0.1-4.5-1-9.5-1.2c-5-0.2-12.7,0.6-12.3,0.5c0.3-0.1,5.9-1.8,13.3-1.2	S227.6,9.9,227.4,9.8z">
+                    </path>
+                    <path class="elementor-shape-fill"
+                        d="M204.5,13.4c-0.1-0.1,2-1,3.2-1.1c1.2-0.1,2,0,2,0.3c0,0.3-0.1,0.5-1.6,0.4	C206.4,12.9,204.6,13.5,204.5,13.4z">
+                    </path>
+                    <path class="elementor-shape-fill"
+                        d="M201,10.6c0-0.1-4.4,1.2-6.3,2.2c-1.9,0.9-6.2,3.1-6.1,3.1c0.1,0.1,4.2-1.6,6.3-2.6	S201,10.7,201,10.6z">
+                    </path>
+                    <path class="elementor-shape-fill"
+                        d="M154.5,26.7c-0.1-0.1-4.6,0.3-7.2,0c-7.3-0.7-17-3.2-16.6-2.9c0.4,0.3,13.7,3.1,17,3.3	C152.6,27.5,154.6,26.8,154.5,26.7z">
+                    </path>
+                    <path class="elementor-shape-fill"
+                        d="M41.9,19.3c0,0,1.2-0.3,2.9-0.1c1.7,0.2,5.8,0.9,8.2,0.7c4.2-0.4,7.4-2.7,7-2.6	c-0.4,0-4.3,2.2-8.6,1.9c-1.8-0.1-5.1-0.5-6.7-0.4S41.9,19.3,41.9,19.3z">
+                    </path>
+                    <path class="elementor-shape-fill"
+                        d="M75.5,12.6c0.2,0.1,2-0.8,4.3-1.1c2.3-0.2,2.1-0.3,2.1-0.5c0-0.1-1.8-0.4-3.4,0	C76.9,11.5,75.3,12.5,75.5,12.6z">
+                    </path>
+                    <path class="elementor-shape-fill"
+                        d="M15.6,13.2c0-0.1,4.3,0,6.7,0.5c2.4,0.5,5,1.9,5,2c0,0.1-2.7-0.8-5.1-1.4	C19.9,13.7,15.7,13.3,15.6,13.2z">
+                    </path>
+                </svg>
+            </div>
+            <!-- FIM DO ICON -->
+
+            <div class="container" data-aos="zoom-out-right">
+                <div class="container-slider">
+                    <div class="container-images">
+                        <img src="Tordo.webp" alt="simble" class="slider on">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+
+                <div class="content" data-aos="zoom-out-left">
+                    <h1>THE HUNGER GAMES</h1>
+                    <p>
+                        "The Hunger Games" is the first book in a dystopian trilogy written by Suzanne Collins. The
+                        story takes place
+                        in Panem, a nation divided into districts controlled by the Capitol. The protagonist, Katniss
+                        Everdeen, lives in the impoverished District 12 and volunteers to participate in the Hunger
+                        Games in place of
+                        her sister. The Hunger Games are a deadly annual event where 24 young individuals fight to the
+                        death in a
+                        televised arena. Katniss becomes a figure of resistance against the oppressive government,
+                        facing challenges
+                        and dangers as she fights for survival. The book addresses themes such as social inequality,
+                        media
+                        manipulation, and the power of resistance. It is an engaging story, full of action and
+                        reflections on the
+                        human condition.
+                    </p>
+
+                </div>
+                <button id="read_button" data-aos="zoom-out-left">
+                    read more
+                </button>
+                <button class="B" onclick="window.location.href = 'jogos.en.html'" data-aos="zoom-out-left">
+                    <a>
+                        CLICK TO CONTINUE
+                    </a>
+                </button>
+            </div>
+        </div>
+
+
+        <div id="fire">
+            <div class="card">
+                <div class="content" data-aos="zoom-out-right">
+                    <h1>CATCHING FIRE</h1>
+                    <p>
+                        "The Hunger Games" is the first book in a dystopian trilogy written by Suzanne Collins. The
+                        story takes place
+                        in Panem, a nation divided into districts controlled by the Capitol. The protagonist, Katniss
+                        Everdeen, lives in the impoverished District 12 and volunteers to participate in the Hunger
+                        Games in place of
+                        her sister. The Hunger Games are a deadly annual event where 24 young individuals fight to the
+                        death in a
+                        televised arena. Katniss becomes a figure of resistance against the oppressive government,
+                        facing challenges
+                        and dangers as she fights for survival. The book addresses themes such as social inequality,
+                        media
+                        manipulation, and the power of resistance. It is an engaging story, full of action and
+                        reflections on the
+                        human condition.
+                    </p>
+
+                </div>
+                <button id="read_button" data-aos="zoom-out-right">
+                    read more
+                </button>
+                <button class="B" onclick="window.location.href = 'jogos.html'" data-aos="zoom-out-right">
+                    <a>
+                        CLICK TO CONTINUE
+                    </a>
+                </button>
+            </div>
+
+            <div class="container" data-aos="zoom-out-left">
+                <div class="container-slider">
+                    <div class="container-images">
+                        <img src="vo.webp" alt="simble">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="mockingjay">
+            <div class="container" data-aos="zoom-out-right">
+                <div class="container-slider">
+                    <div class="container-images">
+                        <img src="TordoA.webp" alt="simble">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+
+                <div class="content" data-aos="zoom-out-left">
+                    <h1>MOCKINGJAY</h1>
+                    <p>
+                        "The Hunger Games" is the first book in a dystopian trilogy written by Suzanne Collins. The
+                        story takes place
+                        in Panem, a nation divided into districts controlled by the Capitol. The protagonist, Katniss
+                        Everdeen, lives in the impoverished District 12 and volunteers to participate in the Hunger
+                        Games in place of
+                        her sister. The Hunger Games are a deadly annual event where 24 young individuals fight to the
+                        death in a
+                        televised arena. Katniss becomes a figure of resistance against the oppressive government,
+                        facing challenges
+                        and dangers as she fights for survival. The book addresses themes such as social inequality,
+                        media
+                        manipulation, and the power of resistance. It is an engaging story, full of action and
+                        reflections on the
+                        human condition.
+                    </p>
+
+                </div>
+                <button id="read_button" data-aos="zoom-out-left">
+                    read more
+                </button>
+                <button class="B" onclick="window.location.href = 'jogos.html'" data-aos="zoom-out-left">
+                    <a>
+                        CLICK TO CONTINUE
+                    </a>
+                </button>
+            </div>
+        </div>
+
+        <div id="quiz">
+            <img class="icon" src="icon.webp" alt="" data-aos="fade-down">
+            <img class="iconA" src="icon.webp" alt="" data-aos="fade-down">
+            <img class="iconB" src="icon.webp" alt="" data-aos="fade-down">
+            <div data-aos="zoom-in">
+                <h1>THE HUNGER GAMES QUIZ</h1>
+                <p>TEST HOW MUCH YOU KNOW ABOUT THE HUNGER GAMES NOW</p>
+            </div>
+            <div id="botões">
+                <div id="simbolo" data-aos="zoom-out-right">
+                    <img src="vo.webp">
+                </div>
+                <div id="botão" data-aos="zoom-out-left">
+                    <button id="login" onclick="window.location.href = ''">CLICK HERE TO COMPLETE YOUR REGISTRATION</button>
+                    <button id="paraquiz" onclick="window.location.href = ''">CLICK HERE TO TAKE THE QUIZ</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div id="contato">
+            <h1>About Us</h1>
+            <p>Currently, I am a high school student, always striving to improve, whether through project development or
+                studying for my future. I always aim for the best, and if you choose to rely on me, I am certain you
+                won't regret it. Contacts:</p>
+            <div id="midia">
+                <a href="">
+                    <img src="linkedin.png">
+                </a>
+                <a href="">
+                    <img src="git.png">
+                </a>
+                <a href="">
+                    <img src="whats.png">
+                </a>
+                <a href="">
+                    <img src="insta.png">
+                </a>
+            </div>
+        </div>
+
+        <div class="tema">
+            <h1>The Hunger Games</h1>
+            <a href="">
+                <p>THE HUNGER GAMES</p>
+            </a>
+            <a href="">
+                <p>Character</p>
+            </a>
+            <a href="">
+                <p>Storyline</p>
+            </a>
+            <a href="">
+                <p>Opinion</p>
+            </a>
+        </div>
+
+        <div class="tema">
+            <h1>Catching fire</h1>
+            <a href="">
+                <p>CATCHING FIRE</p>
+            </a>
+            <a href="">
+                <p>Character</p>
+            </a>
+            <a href="">
+                <p>Storyline</p>
+            </a>
+            <a href="">
+                <p>Opinion</p>
+            </a>
+        </div>
+
+        <div class="tema">
+            <h1>mockingjay</h1>
+            <a href="">
+                <p>MOCKINGJAY</p>
+            </a>
+            <a href="">
+                <p>Character</p>
+            </a>
+            <a href="">
+                <p>Storyline</p>
+            </a>
+            <a href="">
+                <p>Opinion</p>
+            </a>
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/scroll.js"></script>
+    <script src="js/card.en.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
-    </html>
