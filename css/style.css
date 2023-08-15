@@ -12,6 +12,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .nav {
   flex-direction: row;
 }
@@ -43,8 +47,8 @@ a {
   background: linear-gradient(-45deg, red, #2b0c0c, #770303, #2b0c0c);
   background-size: 400% 400%;
   animation: animate 15s ease infinite;
+  border: solid 0.5px rgb(67, 67, 67);
   height: 5.5rem;
-  border: solid 1px #2b0c0c;
 }
 
 .logo {
@@ -94,91 +98,236 @@ main {
   animation: animate 15s ease infinite;
 }
 
-div#fire,
-div#mockingjay {
-  height: 100vh;
-  width: 100%;
-}
-
 div#page {
+  position: relative;
   flex-direction: row;
   display: flex;
   height: 85.18518518518519vh;
   width: 100%;
+  overflow: hidden;
+  background-color: black;
+  background-size: 400% 400%;
+  overflow-x: hidden;
 }
 
 .img img {
-  position: relative;
-  height: 350px;
-  width: 350px;
-  top: 16vh;
+  position: absolute;
+  height: 50vh;
+  width: 50vh;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  animation: startbutton 1.4s;
 }
 
 .img {
   align-items: center;
+  display: none;
 }
 
-.text h1,
-p {
-  position: relative;
-  top: 22vh;
-  color: #fff;
-}
-
-.text h1 {
+#page h1 {
   font-weight: 100;
-  font-size: 50px;
+  font-size: 6.66vh;
   font-family: 'cinzel';
+  font-weight: 500;
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: 32%;
+  color: #fff;
+  text-align: center;
+  animation: opacityright 1.4s;
 }
 
-.text p {
-  font-size: 25px;
-  font-weight: bold;
+#page p {
+  font-size: 3.3vh;
+  font-weight: 100;
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: 43%;
+  color: #fff;
+  text-align: center;
+  animation: opacityleft 1.4s;
 }
 
-.text button {
-  position: relative;
-  top: 24vh;
+#page button {
+  position: absolute;
+  width: 400px;
+  height: 120px;
+  left: 5%;
+  right: 5%;
+  top: 55%;
   color: rgb(0, 0, 0);
   background: linear-gradient(rgb(137, 20, 20), rgb(213, 7, 7));
   font-weight: 200;
   font-family: 'cinzel';
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   border-radius: 50px;
+  font-size: 1.8em;
   box-shadow: 0px 2px 3px #7c0505;
-  font-size: 1.7em;
   cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  animation: startbutton 1.4s;
 }
 
-.text button:hover {
+.con {
+  display: flex;
+  transition: 1s ease-in-out;
+  transform: translateX(0);
+  opacity: 0.2;
+  top: 88px;
+}
+
+.con img {
+  position: relative;
+  margin-top: -100px;
+  width: 209vh;
+  height: 85.18518518518519vh;
+  top: 88px;
+}
+
+#page button:hover {
   opacity: 0.7;
 }
 
-div .img {
-  flex: 45%;
-}
-
-div .text {
-  flex: 55%;
-  text-align: center;
+.text,
+.img {
+  width: 933.5px;
 }
 
 div#games {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  height: 150vh;
   width: 100%;
 }
 
-div#games h1 {
+div#fire,
+div#mockingjay {
+  display: flex;
+  flex-direction: row;
+  height: 150vh;
+  width: 100%;
+}
+
+div#quiz {
+  display: flex;
+  flex-direction: column;
+  height: 130vh;
+  width: 100%;
+  position: relative;
+}
+
+div#quiz h1,
+div#quiz p {
+  text-align: center;
+  position: relative;
+  top: 90px;
+  color: #fff;
+}
+
+div#quiz img {
+  position: absolute;
+}
+
+img.icon {
+  top: 1%;
+  left: 47.3%;
+  transform: translate(-50%, -50%);
+  height: 70px;
+  width: 70px;
+}
+
+img.iconA {
+  top: 5%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  height: 50px;
+  width: 50px;
+}
+
+img.iconB {
+  top: 8%;
+  left: 48.8%;
+  transform: translate(-50%, -50%);
+  height: 30px;
+  width: 30px;
+}
+
+div#botões {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 80%;
+  height: 70vh;
+  background-color: #6e1111;
+  margin: 0 auto;
+  top: 25vh;
+  border: solid 0.5px black;
+  box-shadow: rgb(141, 6, 6) 3px 5px 5px;
+}
+
+div#simbolo,
+div#botão {
+  flex: 50%
+}
+
+div#simbolo img {
+  height: 350px;
+  width: 305px;
+  top: 30px;
+  left: 30px;
+}
+
+div#botão {
+  display: flex;
+  flex-direction: column;
+}
+
+button#login,
+button#paraquiz {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  position: relative;
+  top: 20vh;
+  background-color: rgb(161, 14, 14);
+  font-weight: 400;
+  font-family: 'cinzel';
+  letter-spacing: 0.3px;
+  padding: 25px;
+  border-radius: 50px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+button#login:hover,
+button#paraquiz:hover {
+  background: transparent;
+  color: rgb(255, 0, 0);
+  transition: all 0.2s ease-in-out;
+}
+
+
+div#games h1,
+div#fire h1 {
   font-weight: 100;
   font-size: 38px;
   font-family: 'cinzel';
   color: #fff;
 }
 
+div#mockingjay h1 {
+  font-weight: 100;
+  font-size: 38px;
+  font-family: 'cinzel';
+  color: #fff;
+}
 
-div#games p {
+div#games p,
+div#fire p {
   position: relative;
   top: 1vh;
   text-align: justify;
@@ -187,7 +336,27 @@ div#games p {
   color: #ccccca;
 }
 
-div#games p::after {
+div#mockingjay p {
+  position: relative;
+  top: 1vh;
+  text-align: justify;
+  font-weight: 500;
+  font-size: 2.5vh;
+  color: #ccccca;
+}
+
+div#games p::after,
+div#fire p::after {
+  content: '';
+  position: absolute;
+  height: 18px;
+  width: 1px;
+  background: rgb(255, 255, 255);
+  margin-left: 10px;
+  animation: font 0.7s ease infinite;
+}
+
+div#mockingjay p::after {
   content: '';
   position: absolute;
   height: 18px;
@@ -201,7 +370,7 @@ div#games button.B {
   position: relative;
   top: 5vh;
   color: rgb(0, 0, 0);
-  background: linear-gradient(-45deg, #858480, rgb(180, 169, 169), rgb(117, 115, 115));
+  background: linear-gradient(-45deg, #076d24, rgb(13, 212, 53), rgb(28, 150, 9));
   font-weight: 200;
   font-family: 'cinzel';
   letter-spacing: 0.3px;
@@ -212,7 +381,42 @@ div#games button.B {
   cursor: pointer;
 }
 
-div#games button:hover {
+div#fire button.B {
+  position: relative;
+  top: 5vh;
+  color: rgb(0, 0, 0);
+  background: linear-gradient(-45deg, #9c1515, rgb(255, 0, 0), rgb(161, 12, 12));
+  font-weight: 200;
+  font-family: 'cinzel';
+  letter-spacing: 0.3px;
+  font-weight: 100;
+  padding: 25px;
+  border-radius: 50px;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+div#mockingjay button.B {
+  position: relative;
+  top: 5vh;
+  color: rgb(0, 0, 0);
+  background: linear-gradient(-45deg, #0a228b, rgb(0, 119, 255), rgb(15, 69, 218));
+  font-weight: 200;
+  font-family: 'cinzel';
+  letter-spacing: 0.3px;
+  font-weight: 100;
+  padding: 25px;
+  border-radius: 50px;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+div#games button:hover,
+div#fire button:hover {
+  opacity: 0.7;
+}
+
+div#mockingjay button:hover {
   opacity: 0.7;
 }
 
@@ -222,7 +426,7 @@ div#games button:hover {
   flex-direction: column;
 }
 
-button#read_button {
+#read_button {
   display: none;
 }
 
@@ -231,14 +435,26 @@ button#read_button {
   display: flex;
   flex: 50%;
   padding: 75px;
+  padding-top: 200px;
 }
 
 .content h1::before {
   content: '';
   position: absolute;
   height: 2px;
-  width: 8vh;
-  background: rgb(230, 177, 19);
+  width: 10vh;
+}
+
+div#games .content h1::before {
+  background: rgb(7, 217, 7);
+}
+
+div#fire .content h1::before {
+  background: red;
+}
+
+div#mockingjay .content h1::before {
+  background: rgb(11, 40, 255);
 }
 
 @keyframes animate {
@@ -256,14 +472,50 @@ button#read_button {
 }
 
 @keyframes font {
-  0%{
+  0% {
     opacity: 100%;
   }
+
   50% {
     opacity: 100%;
   }
-  100%{
+
+  100% {
     opacity: 0%;
+  }
+}
+
+@keyframes startbutton {
+  0% {
+    opacity: 0%;
+    top: 70vh;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes opacityright {
+  0% {
+    opacity: 0%;
+    right: 20%;
+  }
+
+  100% {
+    opacity: 100%;
+  
+  }
+}
+
+@keyframes opacityleft {
+  0% {
+    opacity: 0%;
+    left: 20%;
+  }
+
+  100% {
+    opacity: 100%;
   }
 }
 
@@ -274,6 +526,7 @@ button#read_button {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  padding-top: 180px;
 }
 
 .container-slider img {
@@ -301,7 +554,8 @@ button#read_button {
   opacity: 1;
 }
 
-#prev-button, #next-button {
+#prev-button,
+#next-button {
   width: 30px;
   height: 30px;
   border: none;
@@ -309,13 +563,87 @@ button#read_button {
   cursor: pointer;
 }
 
-#prev-button img, #next-button img {
+#prev-button img,
+#next-button img {
   width: 100%;
   height: 100%;
 }
 
 #prev-button {
   transform: rotate(180deg);
+}
+
+.elementor-shape {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  direction: ltr;
+}
+
+.elementor-shape .elementor-shape-bottom .elementor-shape .elementor-shape-top {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+footer {
+  height: 70vh;
+  width: 100%;
+  background-color: #131212;
+  display: flex;
+  flex-direction: row;
+}
+
+footer h1,
+footer p {
+  color: white;
+}
+
+footer h1 {
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 1.3em;
+}
+
+footer p {
+  font-weight: 100;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+footer a p:hover {
+  color: rgb(188, 167, 44);
+}
+
+div#contato {
+  margin-top: 20px;
+  flex: 40%;
+  padding: 40px;
+  text-align: justify;
+}
+
+div.tema {
+  margin-top: 20px;
+  padding: 40px;
+  flex: 20%;
+  text-align: center;
+}
+
+div#midia {
+  display: flex;
+  flex-direction: row;
+}
+
+div#midia img {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+div#midia img:hover {
+  opacity: 0.7;
 }
 
 @media (max-width: 1230px) {
@@ -341,6 +669,10 @@ button#read_button {
     margin-inline: 1rem;
     border-bottom: 0.0625rem solid rgba(116, 113, 113, 0.16);
     border-radius: 0;
+  }
+
+  .logo {
+    padding-left: 20px;
   }
 
   .btn-menu {
@@ -400,8 +732,9 @@ button#read_button {
   }
 
   .text p {
-    top: 44vh;
-    text-shadow: #180303 2px 5px 7px;
+    left: 45%;
+    top: 50%;
+    margin-top: 30px;
   }
 
   .text h1 {
@@ -411,8 +744,10 @@ button#read_button {
   }
 
   .text button {
-    top: 48vh;
+    top: 46vh;
     box-shadow: #270505 2px 7px 7px;
+    padding: 3.5vh;
+    font-size: 3vh;
   }
 
   .text {
@@ -424,7 +759,8 @@ button#read_button {
     position: absolute;
     align-items: center;
     display: flex;
-    height: 70vh;
+    height: 30vh;
+    width: 100%;
   }
 
   .img a {
@@ -434,8 +770,9 @@ button#read_button {
 
   .img img {
     top: -10vh;
-    height: 300px;
-    width: 300px;
+    right: 0.7vh;
+    height: 35vh;
+    width: 35vh;
   }
 
   div#games {
@@ -499,6 +836,12 @@ button#read_button {
 
   }
 
+  button#read_button:active {
+    background: transparent;
+    color: rgb(230, 177, 19);
+    transition: all 0.2s ease-in-out;
+  }
+
   button#read_button:hover {
     background: transparent;
     color: rgb(230, 177, 19);
@@ -507,9 +850,93 @@ button#read_button {
 
   .card.active .content {
     height: auto;
-  } 
+  }
 
   .container {
     display: none;
   }
+
+  .text {
+    position: absolute;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .text p,
+  .text h1 {
+    position: relative;
+  }
+
+  .text button {
+    position: relative;
+  }
+
+  .icon {
+    display: none;
+
+  }
+
+  .iconB {
+    display: none;
+
+  }
+
+  div#botões {
+    flex-direction: column;
+    height: 90vh;
+  }
+
+  div#simbolo {
+    align-items: center;
+    height: 150vh;
+
+  }
+
+  div#simbolo img {
+    position: static;
+  }
+
+  div#botão button {
+    position: static;
+    margin-left: 20px;
+    font-size: 1em;
+  }
+
+  div#quiz h1,
+  div#quiz p {
+    position: relative;
+    top: 120px;
+  }
+
+  .elementor-shape {
+    top: 0px;
+  }
+
+  #page button {
+    top:70vh;
+    width: 90%;
+  }
+
+  #page p {
+    font-size: 2.3vh;
+    top: 56vh;
+  }
+
+  #page h1 {
+    top: 40vh;
+  }
+
+  #page img {
+    top: 25vh;
+    left: 50%;
+    right: 50%;
+    margin: 0 auto;
+  }
+
+  footer {
+    height: 132vh;
+    flex-direction: column;
+  }
+
 }
