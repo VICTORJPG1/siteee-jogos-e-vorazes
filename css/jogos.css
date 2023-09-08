@@ -451,9 +451,9 @@ div#midia img:hover {
     flex-direction: column;
   }
 
-  footer{
+  footer {
+    height: 1500px;
     flex-direction: column;
-    height: 140vh;
   }
 
   div#botões h1{

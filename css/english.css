@@ -935,8 +935,12 @@ div#midia img:hover {
   }
 
   footer {
-    height: 165vh;
+    height: 1500px;
     flex-direction: column;
+  }
+
+  div#quiz {
+    height: 1200px;
   }
 
 }
