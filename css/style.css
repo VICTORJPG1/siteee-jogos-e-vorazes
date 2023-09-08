@@ -646,7 +646,7 @@ div#midia img:hover {
   opacity: 0.7;
 }
 
-@media (max-width: 1230px) {
+@media (max-width: 1000px) {
   .menu {
     display: block;
     position: absolute;
@@ -935,8 +935,12 @@ div#midia img:hover {
   }
 
   footer {
-    height: 132vh;
+    height: 165vh;
     flex-direction: column;
+  }
+
+  body {
+    overflow-x: hidden;
   }
 
 }
