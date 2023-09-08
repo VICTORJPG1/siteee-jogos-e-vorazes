@@ -12,6 +12,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JOGOS VORAZES</title>
+  <link rel="shortcut icon" href="vo.webp">
   <link rel="stylesheet" href="css/style.css" />
   <script defer src="js/app.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -22,7 +23,52 @@
 
   <header class="header">
     <a href="/" class="logo">JOGOS VORAZES</a>
-   
+    <nav class="nav">
+      <button class="btn-menu" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <!-- <input type="checkbox" id="checkbox" class="checkbox" />
+        <label for="checkbox" class="label-menu"
+          >Menu<span class="hamburger"></span
+        ></label> -->
+      <ul class="menu" id="menu" role="menu">
+        <li><a href="#page">INICIO</a></li>
+        <li><a href="#games">JOGOS VORAZES</a></li>
+        <li><a href="#fire">EM CHAMAS</a></li>
+        <li><a href="#mockingjay">A ESPERANÇA</a></li>
+        <li><a class="br" href="index.html"><img src="brasil.webp"></a></li>
+        <li><a class="uk" href="english.html"><img src="uk.png"></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <div id="page">
+      <div class="con">
+        <img src="jv.webp" alt="" />
+        <img src="b.webp" alt="" />
+        <img src="e.webp" alt="" />
+      </div>
+      <div class="text">
+        <h1>
+          JOGOS VORAZES
+        </h1>
+        <p>
+          TUDO SOBRE A TRIOLOGIA DE JOGOS VORAZES
+        </p>
+        <button onclick="window.location.href = '#games'">
+          <a>
+            COMEÇAR AGORA
+          </a>
+        </button>
+      </div>
+      <div class="img">
+        <a><img src="vo.webp"></a>
+      </div>
+    </div>
+
+
     <div id="games">
       <!-- img icon retirado desse link "https://codepen.io/laura-caicedo/pen/XWZavEd"-->
       <div class="elementor-shape elementor-shape-top" data-negative="false">
@@ -90,7 +136,7 @@
       </div>
       <!-- FIM DO ICON -->
 
-      <div class="container" data-aos="zoom-out-right">
+      <div class="container">
         <div class="container-slider">
           <div class="container-images">
             <img src="Tordo.webp" alt="simble" class="slider on">
@@ -99,7 +145,7 @@
       </div>
       <div class="card">
 
-        <div class="content" data-aos="zoom-out-left">
+        <div class="content">
           <h1>JOGOS VORAZES</h1>
           <p>
             "Jogos Vorazes" é o primeiro livro de uma trilogia distópica escrita por Suzanne Collins. A história se
@@ -115,27 +161,80 @@
           </p>
 
         </div>
-        <button id="read_button" data-aos="zoom-out-left">
+        <button id="read_button">
           LER MAIS
         </button>
-        <button class="B" onclick="window.location.href = 'jogos.html'" data-aos="zoom-out-left">
+        <button class="B" onclick="window.location.href = 'jogos.html'">
           <a>
             CLIQUE PARA CONFERIR
           </a>
         </button>
       </div>
     </div>
-            uma figura de resistência contra o governo opressor, enfrentando desafios e perigos enquanto luta pela
-            sobrevivência. O livro aborda temas como desigualdade social, manipulação midiática e a força da
-            resistência.
-            É uma história envolvente, cheia de ação e reflexões sobre a condição humana.
+
+
+    <div id="fire">
+      <div class="card">
+        <div class="content">
+          <h1>EM CHAMAS</h1>
+          <p>
+
+            "Em Chamas", o segundo livro da trilogia "Jogos Vorazes" de Suzanne Collins, continua a história de Katniss
+            Everdeen em um mundo distópico. Após vencer os Jogos Vorazes, Katniss enfrenta uma nova edição mortal dos
+            jogos, com vencedores anteriores como competidores. Enquanto luta por sua vida na arena, ela se torna um
+            símbolo de resistência contra a opressão do Capitólio. O livro explora temas de poder, manipulação política
+            e coragem individual. Com ação intensa e dilemas emocionais, "Em Chamas" mantém os leitores envolvidos
+            enquanto a revolta contra o regime cresce.
+
           </p>
 
         </div>
-        <button id="read_button" data-aos="zoom-out-left">
+        <button id="read_button">
           LER MAIS
         </button>
-        <button class="B" onclick="window.location.href = 'jogos.html'" data-aos="zoom-out-left">
+        <button class="B" onclick="window.location.href = 'emchamas.html'">
+          <a>
+            CLIQUE PARA CONFERIR
+          </a>
+        </button>
+      </div>
+
+      <div class="container">
+        <div class="container-slider">
+          <div class="container-images">
+            <img src="vo.webp" alt="simble">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="mockingjay">
+      <div class="container">
+        <div class="container-slider">
+          <div class="container-images">
+            <img src="TordoA.webp" alt="simble">
+          </div>
+        </div>
+      </div>
+      <div class="card">
+
+        <div class="content">
+          <h1>A ESPERANÇA</h1>
+          <p>
+
+            "A Esperança", o terceiro e último livro da trilogia, conduz os leitores a um
+            desfecho emocionante e cheio de ação. Katniss Everdeen enfrenta o clímax da rebelião contra o Capitólio,
+            tornando-se o símbolo da resistência. Enquanto os distritos se unem para lutar por liberdade, Katniss assume
+            o papel de líder, desafiando a manipulação e a opressão. O livro aborda temas de sacrifício, verdade e
+            coragem em um mundo distópico. A narrativa intensa culmina na luta final pela liberdade, trazendo a trilogia
+            a um fechamento poderoso e emocionante.
+          </p>
+
+        </div>
+        <button id="read_button">
+          LER MAIS
+        </button>
+        <button class="B" onclick="window.location.href = 'aesperança.html'">
           <a>
             CLIQUE PARA CONFERIR
           </a>
@@ -152,10 +251,10 @@
         <p>TESTE AGORA O QUANTO VOCÊ SABE De JOGOS VORAZES</p>
       </div>
       <div id="botões">
-        <div id="simbolo" data-aos="zoom-out-right">
+        <div id="simbolo">
           <img src="vo.webp">
         </div>
-        <div id="botão" data-aos="zoom-out-left">
+        <div id="botão">
           <button id="login" onclick="window.location.href = ''">CLIQUE AQUI PARA REALIZAR SEU CADASTRO</button>
           <button id="paraquiz" onclick="window.location.href = ''">CLIQUE AQUI PARA REALIZAR O QUIZ</button>
         </div>
@@ -240,6 +339,7 @@
   <script src="js/scroll.js"></script>
   <script src="js/card.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/header.js"></script>
 </body>
 
 </html>
